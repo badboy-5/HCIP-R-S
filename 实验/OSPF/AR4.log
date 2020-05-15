@@ -1,0 +1,24 @@
+﻿# 配置IP地址
+[AR4]int lo 0
+[AR4-LoopBack0]ip ad 4.4.4.4 32
+[AR4-LoopBack0]int g0/0/0
+[AR4-GigabitEthernet0/0/0]ip ad 24.1.1.4 24
+[AR4-GigabitEthernet0/0/0]int g0/0/1
+[AR4-GigabitEthernet0/0/1]ip ad 45.1.1.4 24
+[AR4-GigabitEthernet0/0/1]q
+
+# 配置OSPF
+[AR4]ospf 1 router-id 4.4.4.4
+[AR4-ospf-1]area 0
+[AR4-ospf-1-area-0.0.0.0]net 24.1.1.0 0.0.0.255
+[AR4-ospf-1-area-0.0.0.0]net 4.4.4.4 0.0.0.0 
+[AR4-ospf-1-area-0.0.0.1]net 45.1.1.0 0.0.0.255
+[AR4-ospf-1-area-0.0.0.1]q
+
+# 配置虚连接
+[AR4-ospf-1]area 1
+[AR4-ospf-1-area-0.0.0.1]vlink-peer 5.5.5.5
+
+# 配置认证
+[AR4-ospf-1]area 0
+[AR4-ospf-1-area-0.0.0.0]authentication-mode md5 1 plain bad-5

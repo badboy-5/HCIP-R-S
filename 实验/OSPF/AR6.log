@@ -1,0 +1,15 @@
+﻿# 配置IP地址
+[AR6]int lo 0
+[AR6-LoopBack0]ip ad 6.6.6.6 32
+[AR6-LoopBack0]int g0/0/0
+[AR6-GigabitEthernet0/0/0]ip ad 56.1.1.6 24
+[AR6-GigabitEthernet0/0/0]q
+
+# 配置OSPF
+[AR6]ospf 1 router-id 6.6.6.6
+[AR6-ospf-1]area 2
+[AR6-ospf-1-area-0.0.0.2]net 56.1.1.0 0.0.0.255
+[AR6-ospf-1-area-0.0.0.2]net 6.6.6.6 0.0.0.0   
+
+# 配置Stub区域
+[AR6-ospf-1-area-0.0.0.2]stub 

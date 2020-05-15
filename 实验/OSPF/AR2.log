@@ -1,0 +1,104 @@
+﻿# 配置IP地址
+[AR2]int lo 0
+[AR2-LoopBack0]ip ad 2.2.2.2 32
+[AR2-LoopBack0]int g0/0/0
+[AR2-GigabitEthernet0/0/0]ip ad 12.1.1.2 24
+[AR2-GigabitEthernet0/0/0]int g0/0/1
+[AR2-GigabitEthernet0/0/1]ip ad 23.1.1.2 24
+[AR2-GigabitEthernet0/0/1]int g0/0/2
+[AR2-GigabitEthernet0/0/2]ip ad 24.1.1.2 24
+[AR2-GigabitEthernet0/0/2]q
+
+# 配置RIP
+[AR2]rip
+[AR2-rip-1]v 2
+[AR2-rip-1]undo summary 
+[AR2-rip-1]net 2.0.0.0
+[AR2-rip-1]net 12.0.0.0 
+[AR2-rip-1]q
+
+# 查看RIP学习到的路由
+[AR2]dis ip routing-table protocol rip
+Route Flags: R - relay, D - download to fib
+------------------------------------------------------------------------------
+Public routing table : RIP
+         Destinations : 1        Routes : 1        
+
+RIP routing table status : <Active>
+         Destinations : 1        Routes : 1
+
+Destination/Mask    Proto   Pre  Cost      Flags NextHop         Interface
+
+        1.1.1.1/32  RIP     100  1           D   12.1.1.1        GigabitEthernet0/0/0
+
+RIP routing table status : <Inactive>
+         Destinations : 0        Routes : 0
+		 
+# 配置OSPF
+[AR2]ospf 1 router-id 2.2.2.2 
+
+<AR2>reset ospf process  //重新加载OSPF进程
+Warning: The OSPF process will be reset. Continue? [Y/N]:y
+
+[AR2]ospf 1 router-id 2.2.2.2
+[AR2-ospf-1]area 0
+[AR2-ospf-1-area-0.0.0.0]net 23.1.1.0 0.0.0.255
+[AR2-ospf-1-area-0.0.0.0]net 24.1.1.0 0.0.0.255
+[AR2-ospf-1-area-0.0.0.0]net 2.2.2.2 0.0.0.0
+[AR2-ospf-1-area-0.0.0.0]q
+
+# OSPF引入RIP
+[AR2-ospf-1]import-route rip 1
+
+# RIP 引入OSPF
+[AR2-ospf-1]rip
+[AR2-rip-1]import-route ospf 1
+[AR2-rip-1]q
+
+# 汇总1.1.1.0
+[AR2]ospf 
+[AR2-ospf-1]asbr-summary 1.1.1.0 255.255.255.0
+[AR2-ospf-1]q
+
+# 查看路由表
+[AR2]dis ip routing-table 
+Route Flags: R - relay, D - download to fib
+------------------------------------------------------------------------------
+Routing Tables: Public
+         Destinations : 22       Routes : 25       
+
+Destination/Mask    Proto   Pre  Cost      Flags NextHop         Interface
+
+        1.1.1.1/32  RIP     100  1           D   12.1.1.1        GigabitEthernet0/0/0
+        2.2.2.2/32  Direct  0    0           D   127.0.0.1       LoopBack0
+        3.3.3.3/32  OSPF    10   1           D   23.1.1.3        GigabitEthernet0/0/1
+        4.4.4.4/32  OSPF    10   1           D   24.1.1.4        GigabitEthernet0/0/2
+        5.5.5.5/32  OSPF    10   2           D   23.1.1.3        GigabitEthernet0/0/1
+                    OSPF    10   2           D   24.1.1.4        GigabitEthernet0/0/2
+        6.6.6.6/32  OSPF    10   3           D   24.1.1.4        GigabitEthernet0/0/2
+                    OSPF    10   3           D   23.1.1.3        GigabitEthernet0/0/1
+       12.1.1.0/24  Direct  0    0           D   12.1.1.2        GigabitEthernet0/0/0
+       12.1.1.2/32  Direct  0    0           D   127.0.0.1       GigabitEthernet0/0/0
+     12.1.1.255/32  Direct  0    0           D   127.0.0.1       GigabitEthernet0/0/0
+       23.1.1.0/24  Direct  0    0           D   23.1.1.2        GigabitEthernet0/0/1
+       23.1.1.2/32  Direct  0    0           D   127.0.0.1       GigabitEthernet0/0/1
+     23.1.1.255/32  Direct  0    0           D   127.0.0.1       GigabitEthernet0/0/1
+       24.1.1.0/24  Direct  0    0           D   24.1.1.2        GigabitEthernet0/0/2
+       24.1.1.2/32  Direct  0    0           D   127.0.0.1       GigabitEthernet0/0/2
+     24.1.1.255/32  Direct  0    0           D   127.0.0.1       GigabitEthernet0/0/2
+       35.1.1.0/24  OSPF    10   2           D   23.1.1.3        GigabitEthernet0/0/1
+       45.1.1.0/24  OSPF    10   2           D   24.1.1.4        GigabitEthernet0/0/2
+       56.1.1.0/24  OSPF    10   3           D   24.1.1.4        GigabitEthernet0/0/2
+                    OSPF    10   3           D   23.1.1.3        GigabitEthernet0/0/1
+      127.0.0.0/8   Direct  0    0           D   127.0.0.1       InLoopBack0
+      127.0.0.1/32  Direct  0    0           D   127.0.0.1       InLoopBack0
+127.255.255.255/32  Direct  0    0           D   127.0.0.1       InLoopBack0
+255.255.255.255/32  Direct  0    0           D   127.0.0.1       InLoopBack0
+
+# 汇总12.1.1.0，并不宣告
+[AR2]ospf
+[AR2-ospf-1]asbr-summary 12.1.1.0 255.255.255.0 not-advertise                                                         
+
+# 配置认证
+[AR2-ospf-1]area 0
+[AR2-ospf-1-area-0.0.0.0]authentication-mode  md5 1 plain bad-5  //使用MD5加密
