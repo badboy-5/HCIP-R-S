@@ -101,10 +101,10 @@
 # AR3配置OSPF
 [AR3]ospf 1 router-id 3.3.3.3
 [AR3-ospf-1]area 0
+[AR3-ospf-1-area-0.0.0.0]net 3.3.3.3 0.0.0.0
 [AR3-ospf-1-area-0.0.0.0]net 23.1.1.0 0.0.0.255
 [AR3-ospf-1-area-0.0.0.0]area 1
 [AR3-ospf-1-area-0.0.0.1]net 35.1.1.0 0.0.0.255
-[AR3-ospf-1-area-0.0.0.0]net 3.3.3.3 0.0.0.0
 [AR3-ospf-1-area-0.0.0.0]q
 [AR3-ospf-1]q
 
@@ -153,6 +153,12 @@
 [AR5-ospf-1]area 2
 [AR5-ospf-1-area-0.0.0.2]stub no-summary 
 [AR5-ospf-1-area-0.0.0.2]q
+
+# AR3配置虚连接
+[AR3-ospf-1-area-0.0.0.1]vlink-peer 5.5.5.5
+
+# AR4配置虚连接
+[AR4-ospf-1-area-0.0.0.1]vlink-peer 5.5.5.5
 
 # AR5配置虚连接
 [AR5-ospf-1]area 1
@@ -207,4 +213,4 @@
 <AR1>ping -a 1.1.1.1 6.6.6.6  //指定1.1.1.1ping6.6.6.6
 ```
 
-> 原物理接口的IP被过滤了，所以不能和6.6.6.6ping通
+> 原物理接口的IP被过滤了，所以不能和6.6.6.6ping通额
