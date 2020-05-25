@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="AD41C0F8-C531-482b-A9E6-017886AF323E" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AD-0B-DF" com_port="2000" bootmode="0" cx="278.000000" cy="55.000000" edit_left="305" edit_top="109">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="C3988D17-1A43-4277-8BA5-B5354124C7B9" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-82-1D-D3" com_port="2001" bootmode="0" cx="518.000000" cy="55.000000" edit_left="545" edit_top="109">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="836C8E9A-5061-481e-8166-FA7F2919E40A" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-9B-75-C5" com_port="2003" bootmode="0" cx="838.000000" cy="55.000000" edit_left="865" edit_top="109">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="059EF71C-F2E2-42c5-A072-5B5A2620CCE9" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.1.254  -simpc_mac 54-89-98-C9-18-65  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-C9-18-65" com_port="0" bootmode="0" cx="678.000000" cy="455.000000" edit_left="705" edit_top="509">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="B04804B6-09F2-48de-B2B4-F80919D0C213" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-96-22-1A" com_port="2002" bootmode="0" cx="678.000000" cy="295.000000" edit_left="685" edit_top="343">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="AD41C0F8-C531-482b-A9E6-017886AF323E" destDeviceID="C3988D17-1A43-4277-8BA5-B5354124C7B9">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="348.183777" srcBoundRect_Y="82.000000" srcOffset_X="-18.000000" srcOffset_Y="-18.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="501.816223" tarBoundRect_Y="82.000000" tarOffset_X="-28.000000" tarOffset_Y="-20.000000" />
+        </line>
+        <line srcDeviceID="B04804B6-09F2-48de-B2B4-F80919D0C213" destDeviceID="836C8E9A-5061-481e-8166-FA7F2919E40A">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="728.954041" srcBoundRect_Y="286.068939" srcOffset_X="5.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="841.045959" tarBoundRect_Y="117.931068" tarOffset_X="-51.000000" tarOffset_Y="-10.000000" />
+        </line>
+        <line srcDeviceID="C3988D17-1A43-4277-8BA5-B5354124C7B9" destDeviceID="836C8E9A-5061-481e-8166-FA7F2919E40A">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="588.183777" srcBoundRect_Y="82.000000" srcOffset_X="-16.000000" srcOffset_Y="-22.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="821.816223" tarBoundRect_Y="82.000000" tarOffset_X="-26.000000" tarOffset_Y="-18.000000" />
+        </line>
+        <line srcDeviceID="B04804B6-09F2-48de-B2B4-F80919D0C213" destDeviceID="059EF71C-F2E2-42c5-A072-5B5A2620CCE9">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="705.000000" srcBoundRect_Y="365.183777" srcOffset_X="6.000000" srcOffset_Y="-2.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="705.000000" tarBoundRect_Y="438.816223" tarOffset_X="6.000000" tarOffset_Y="-2.000000" />
+        </line>
+        <line srcDeviceID="B04804B6-09F2-48de-B2B4-F80919D0C213" destDeviceID="C3988D17-1A43-4277-8BA5-B5354124C7B9">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="681.045959" srcBoundRect_Y="286.068939" srcOffset_X="-51.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="568.954041" tarBoundRect_Y="117.931068" tarOffset_X="4.000000" tarOffset_Y="-9.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="0" color="33023" upleftcorner="262,9" width="281" height="151" startpt="0,0" endpt="0,0" borderStyle="4" borderWidth="3" />
+        <shape type="1" filloption="0" color="16711680" upleftcorner="543,10" width="356" height="523" startpt="0,0" endpt="0,0" borderStyle="4" borderWidth="3" />
+        <shape type="1" filloption="0" color="16711680" upleftcorner="842,442" width="0" height="0" startpt="0,0" endpt="0,0" borderStyle="4" borderWidth="3" />
+    </shapes>
+    <txttips>
+        <txttip left="734" top="481" right="871" bottom="517" content="192.168.1.1/24&#x0D;&#x0A;GW:192.168.1.254" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="774" top="34" right="886" bottom="53" content="Lo:3.3.3.3/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="269" top="124" right="381" bottom="143" content="Lo:1.1.1.1/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="361" top="34" right="457" bottom="53" content="12.1.1.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="491" top="34" right="603" bottom="53" content="Lo:2.2.2.2/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="652" top="36" right="748" bottom="55" content="23.1.1.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="727" top="330" right="839" bottom="349" content="Lo:4.4.4.4/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="545" top="224" right="641" bottom="243" content="24.1.1.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="790" top="198" right="886" bottom="217" content="34.1.1.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="648" top="146" right="744" bottom="165" content="OSPF Area 0" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="265" top="13" right="336" bottom="32" content="Internet" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="28" top="168" right="539" bottom="324" content="实验需求：&#x0D;&#x0A;按照图示配置 IP 地址&#x0D;&#x0A;1. R2，R3，R4 运行 OSPF 使内网互通，所有接口（公网接口除外）&#x0D;&#x0A;  全部宣告进Area 0；要求使用环回口作为Router-id&#x0D;&#x0A;2. 业务网段不允许出现协议报文&#x0D;&#x0A;3. R1 模拟互联网，内网通过 R2 连接互联网，在 R2上配置默认&#x0D;&#x0A;  路由并引入到 OSPF&#x0D;&#x0A;4. R2 上配置 EASY IP，只允许业务网段访问互联网&#x0D;&#x0A;5. 要求业务网段访问互联网流量经过 R4，R3，R2" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+    </txttips>
+</topo>
