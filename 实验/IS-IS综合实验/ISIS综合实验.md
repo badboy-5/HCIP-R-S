@@ -1,6 +1,6 @@
 # 如下拓扑：
 
-![ISIS综合实验拓扑](F:%5CGitHub%5CHCIP%20R&S%5C%E5%AE%9E%E9%AA%8C%5CIS-IS%5CISIS%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C.assets%5CISIS%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C%E6%8B%93%E6%89%91.png)
+![1590548021296](F:%5CGitHub%5CHCIP%20R&S%5C%E5%AE%9E%E9%AA%8C%5CIS-IS%5CISIS%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C.assets%5C1590548021296.png)
 
 # 实验需求：
 
@@ -14,45 +14,70 @@
 # 配置IP地址
 
 ```bash
+------------------------------------------------
 # AR1配置
-[AR1]int g0/0/0
-[AR1-GigabitEthernet0/0/0]ip ad 123.1.1.1 24
-[AR1-GigabitEthernet0/0/0]q
-[AR1]int lo 0
-[AR1-LoopBack0]ip ad 1.1.1.1 32
-
+ sysname AR1
+#
+interface GigabitEthernet0/0/0
+ ip address 123.1.1.1 255.255.255.0 
+#
+interface LoopBack0
+ ip address 1.1.1.1 255.255.255.255
+------------------------------------------------
 # AR2配置
-[AR2]int g0/0/0
-[AR2-GigabitEthernet0/0/0]ip ad 123.1.1.2 24
-[AR2-GigabitEthernet0/0/0]int g0/0/1
-[AR2-GigabitEthernet0/0/1]ip ad 24.1.1.2 24
-
+ sysname AR2
+#
+interface GigabitEthernet0/0/0
+ ip address 123.1.1.2 255.255.255.0 
+#
+interface GigabitEthernet0/0/1
+ ip address 24.1.1.2 255.255.255.0 
+------------------------------------------------
 # AR3配置
-[AR3]int g0/0/0
-[AR3-GigabitEthernet0/0/0]ip ad 123.1.1.3 24
-[AR3-GigabitEthernet0/0/0]int s1/0/0
-[AR3-Serial1/0/0]ip ad 34.1.1.3 24
-
+ sysname AR3
+#
+interface Serial1/0/0
+ link-protocol ppp
+ ip address 34.1.1.3 255.255.255.0 
+#
+interface GigabitEthernet0/0/0
+ ip address 123.1.1.3 255.255.255.0
+------------------------------------------------
 # AR4配置
-[AR4]int g0/0/0 
-[AR4-GigabitEthernet0/0/0]ip ad 24.1.1.4 24
-[AR4-GigabitEthernet0/0/0]int s1/0/0
-[AR4-Serial1/0/0]ip ad 34.1.1.4 24
-
+ sysname AR4
+#
+interface Serial1/0/0
+ link-protocol ppp
+ ip address 34.1.1.4 255.255.255.0 
+#
+interface GigabitEthernet0/0/0
+ ip address 24.1.1.4 255.255.255.0 
+#
+interface GigabitEthernet0/0/2
+ ip address 45.1.1.4 255.255.255.0 
+------------------------------------------------
 # AR5配置
-[AR5]int g0/0/0
-[AR5-GigabitEthernet0/0/0]ip ad 45.1.1.5 24
-[AR5-GigabitEthernet0/0/0]int lo 0
-[AR5-LoopBack0]ip ad 5.5.5.5 32
-[AR5-LoopBack0]int lo 1
-[AR5-LoopBack1]ip ad 192.168.1.1 32
-[AR5-LoopBack1]int lo 2
-[AR5-LoopBack2]ip ad 192.168.2.1 32
-[AR5-LoopBack2]int lo 3
-[AR5-LoopBack3]ip ad 192.168.3.1 32
+ sysname AR5
+#
+interface GigabitEthernet0/0/0
+ ip address 45.1.1.5 255.255.255.0 
+#
+interface LoopBack0
+ ip address 5.5.5.5 255.255.255.255 
+#
+interface LoopBack1
+ ip address 192.168.1.1 255.255.255.255 
+#
+interface LoopBack2
+ ip address 192.168.2.1 255.255.255.255 
+#
+interface LoopBack3
+ ip address 192.168.3.1 255.255.255.255
 ```
 
 # 配置基础IS-IS
+
+- AR1为Level-1，AR2、AR3为Level-1-2（默认），AR4、AR5为Level-2
 
 ```bash
 # AR1配置
@@ -101,6 +126,7 @@
 [AR5-LoopBack0]isis enable 100
 ```
 
+
 # 详细配置
 
 ```bash
@@ -108,17 +134,22 @@
 [AR1]int g0/0/0
 [AR1-GigabitEthernet0/0/0]isis dis-priority 70
 
-[AR1]dis isis interface g0/0/0  //查看ISIS状态
+[AR1]dis isis interface g0/0/0  //查看ISIS状态，AR1为Level-1的DIS
 
 # 链路类型修改为P2P
-[AR4]int g0/0/02
+[AR4]int g0/0/2
 [AR4-GigabitEthernet0/0/2]isis circuit-type p2p
 
 # AR5修改链路类型为P2P
 [AR5]int g0/0/0
 [AR5-GigabitEthernet0/0/0]isis circuit-type p2p
+```
 
+	P2P两端的链路类型都需要修改
 
+- Level-1引入Level-2,并配置最优路径
+
+```bash
 # AR5引入直连路由
 [AR5]isis 100
 [AR5-isis-100]import-route direct  //引入直连路由
@@ -137,4 +168,5 @@
 [AR1]dis ip routing-table  //查看路由表信息
 ```
 
+> 在修改开销之前，AR1访问Area 49.0002通过AR2和AR3负载，修改将AR2的出接口的开销改小，数据会优先从AR2转发
 > AR2上的接口down后，数据走AR3，恢复后继续从AR2转发

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UNICODE" ?>
 <topo version="1.3.00.100">
     <devices>
-        <dev id="F867DB5C-F236-42ab-9036-607E08CF4A92" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-BE-7F-15" com_port="2000" bootmode="1" cx="284.000000" cy="219.000000" edit_left="311" edit_top="273">
+        <dev id="F867DB5C-F236-42ab-9036-607E08CF4A92" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-BE-7F-15" com_port="2000" bootmode="0" cx="284.000000" cy="219.000000" edit_left="311" edit_top="273">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="B5490599-0C67-4061-A4FE-62DD8C7B4BDD" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-1A-31-29" com_port="2003" bootmode="1" cx="613.000000" cy="373.000000" edit_left="640" edit_top="427">
+        <dev id="B5490599-0C67-4061-A4FE-62DD8C7B4BDD" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-1A-31-29" com_port="2003" bootmode="0" cx="613.000000" cy="373.000000" edit_left="640" edit_top="427">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -15,12 +15,12 @@
             </slot>
             <slot isMainBoard="0" id="0" type="521" />
         </dev>
-        <dev id="0413106C-A8FF-4a6e-935F-0DE676D18BCC" name="PC1" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-3E-34-9A  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-3E-34-9A" com_port="0" bootmode="1" cx="773.000000" cy="373.000000" edit_left="800" edit_top="427">
+        <dev id="0413106C-A8FF-4a6e-935F-0DE676D18BCC" name="PC1" poe="0" model="PC" settings=" -simpc_ip 172.16.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 172.16.1.254  -simpc_mac 54-89-98-3E-34-9A  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-3E-34-9A" com_port="0" bootmode="0" cx="773.000000" cy="373.000000" edit_left="800" edit_top="427">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="0F0B9F8D-4A56-4233-9C1B-FB72BC598ED6" name="AR5" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-BA-64-D6" com_port="2004" bootmode="1" cx="773.000000" cy="213.000000" edit_left="821" edit_top="260">
+        <dev id="0F0B9F8D-4A56-4233-9C1B-FB72BC598ED6" name="AR5" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-BA-64-D6" com_port="2004" bootmode="0" cx="773.000000" cy="213.000000" edit_left="821" edit_top="260">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -28,19 +28,19 @@
             </slot>
             <slot isMainBoard="0" id="0" type="521" />
         </dev>
-        <dev id="D055CCC9-88F5-4593-8F48-06627A6D090B" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-14-62-B6" com_port="2001" bootmode="1" cx="444.000000" cy="219.000000" edit_left="471" edit_top="273">
+        <dev id="D055CCC9-88F5-4593-8F48-06627A6D090B" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-14-62-B6" com_port="2001" bootmode="0" cx="444.000000" cy="219.000000" edit_left="471" edit_top="273">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="15D1A693-A0D1-4350-B59C-672566169DC9" name="AR6" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AC-6F-9E" com_port="2005" bootmode="1" cx="1013.000000" cy="213.000000" edit_left="1040" edit_top="267">
+        <dev id="15D1A693-A0D1-4350-B59C-672566169DC9" name="AR6" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AC-6F-9E" com_port="2005" bootmode="0" cx="1013.000000" cy="213.000000" edit_left="1040" edit_top="267">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="F3B0136F-8174-4323-8B4C-A627F1AADA34" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-1E-47-D0" com_port="2002" bootmode="1" cx="613.000000" cy="53.000000" edit_left="640" edit_top="107">
+        <dev id="F3B0136F-8174-4323-8B4C-A627F1AADA34" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-1E-47-D0" com_port="2002" bootmode="0" cx="613.000000" cy="53.000000" edit_left="640" edit_top="107">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -72,17 +72,25 @@
     </lines>
     <shapes>
         <shape type="2" filloption="1" color="16777088" upleftcorner="790,184" width="300" height="117" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
-        <shape type="2" filloption="1" color="8421631" upleftcorner="282,169" width="193" height="144" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="8421631" upleftcorner="280,175" width="193" height="144" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="8453888" upleftcorner="559,66" width="255" height="255" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
         <shape type="2" filloption="1" color="16744448" upleftcorner="631,242" width="277" height="230" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
-        <shape type="2" filloption="1" color="8453888" upleftcorner="618,40" width="236" height="207" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
         <shape type="1" filloption="1" color="8454143" upleftcorner="475,47" width="167" height="393" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
     </shapes>
     <txttips>
-        <txttip left="354" top="176" right="400" bottom="195" content="RIPv2" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="345" top="183" right="391" bottom="202" content="RIPv2" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
         <txttip left="506" top="61" right="602" bottom="80" content="OSPF Area 0" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
-        <txttip left="729" top="59" right="825" bottom="78" content="OSPF Area 1" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="646" top="194" right="742" bottom="213" content="OSPF Area 1" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
         <txttip left="680" top="420" right="776" bottom="439" content="OSPF Area 2" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
         <txttip left="886" top="193" right="982" bottom="212" content="OSPF Area 3" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
         <txttip left="842" top="391" right="979" bottom="427" content="172.16.1.1/24&#x0D;&#x0A;GW：172.16.1.254" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="89" top="477" right="1049" bottom="616" content="实验需求：&#x0D;&#x0A;1. 按照图示配置 IP 地址，所有路由器配置环回口 IP 地址为 X.X.X.X/32 作为 Router-id，X 为设备编号（R1 除外）&#x0D;&#x0A;2. 按照图示分区域配置 OSPF 与 RIP&#x0D;&#x0A;3. R1 上配置环回口模拟业务网段；并在 R2 上进行单点双向路由引入，要求所有业务网段的路由聚合为一条后发布到 OSPF 区域&#x0D;&#x0A;4. Area 3 不允许出现非直连的明细路由；并要求所有路由可达&#x0D;&#x0A;5. PC1 访问业务网段路由需优先走以太网链路，并要求所在的直连网段不允许出现协议报文&#x0D;&#x0A;6. OSPF 区域内路由器不允许存在 100.12.1.0/24 网段的路由&#x0D;&#x0A;7. 为了保证协议安全，Area 0 配置区域验证，验证密钥 123456" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="201" top="98" right="355" bottom="168" content="Lo:192.168.0.1/24&#x0D;&#x0A;Lo:192.168.1.1/24&#x0D;&#x0A;Lo:192.168.2.1/24&#x0D;&#x0A;Lo:192.168.3.1/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="331" top="270" right="443" bottom="289" content="100.12.1.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="396" top="196" right="508" bottom="215" content="Lo:2.2.2.2/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="582" top="33" right="694" bottom="52" content="Lo:3.3.3.3/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="758" top="168" right="870" bottom="187" content="Lo:5.5.5.5/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="589" top="444" right="701" bottom="463" content="Lo:4.4.4.4/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="1000" top="191" right="1112" bottom="210" content="Lo:6.6.6.6/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
     </txttips>
 </topo>

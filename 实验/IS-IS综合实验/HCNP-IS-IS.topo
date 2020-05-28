@@ -71,12 +71,15 @@
         <txttip left="223" top="126" right="286" bottom="145" content="Level-1" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
         <txttip left="714" top="281" right="818" bottom="300" content="Area 49.0002" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
         <txttip left="573" top="100" right="636" bottom="119" content="Level-2" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
-        <txttip left="158" top="176" right="262" bottom="195" content="Area 49.0001" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
-        <txttip left="920" top="214" right="1049" bottom="267" content="192.168.1.0/24&#x0D;&#x0A;192.168.2.0/24&#x0D;&#x0A;192.168.3.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="212" top="150" right="316" bottom="169" content="Area 49.0001" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="913" top="192" right="1075" bottom="262" content="Lo：5.5.5.5/32&#x0D;&#x0A;Lo：192.168.1.1/32&#x0D;&#x0A;Lo：192.168.2.2/32&#x0D;&#x0A;Lo：192.168.3.3/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
         <txttip left="715" top="196" right="811" bottom="215" content="45.1.1.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
         <txttip left="452" top="213" right="548" bottom="232" content="24.1.1.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
         <txttip left="500" top="294" right="596" bottom="313" content="34.1.1.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
         <txttip left="173" top="299" right="277" bottom="318" content="123.1.1.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
-        <txttip left="107" top="411" right="876" bottom="515" content="实验需求：&#x0D;&#x0A;1. 客户网络所有路由器路由协议要求启用IS-IS，使全网路由可达。&#x0D;&#x0A;2. 全部IS-IS进程号统一为100，其中AR1在Area49.0001区域为DIS，AR4与AR5之间要求采用P2P网络类型&#x0D;&#x0A;3. AR5引入直连链路192.168.X.X，要求AR1访问Area49.0002走最优路径。&#x0D;&#x0A;&#x0D;&#x0A;根据上述描述，进行正确配置，使网络路由达到客户需求" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="107" top="411" right="867" bottom="515" content="实验需求：&#x0D;&#x0A;1. 客户网络所有路由器路由协议要求启用IS-IS，使全网路由可达。&#x0D;&#x0A;2. 全部IS-IS进程号统一为100，其中AR1在Area49.0001区域为DIS，AR4与AR5之间要求采用P2P网络类型&#x0D;&#x0A;3. AR5引入直连链路192.168.X.X，要求AR1访问Area49.0002走最优路径。&#x0D;&#x0A;&#x0D;&#x0A;根据上述描述，进行正确配置，使网络路由达到客户需求" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="559" top="127" right="663" bottom="146" content="Area 49.0002" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="360" top="216" right="439" bottom="235" content="Level-1-2" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="18" top="191" right="139" bottom="210" content="Lo：1.1.1.1/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
     </txttips>
 </topo>

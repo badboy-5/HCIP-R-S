@@ -121,6 +121,7 @@
 [AR5-ospf-1]area 1
 [AR5-ospf-1-area-0.0.0.1]net 5.5.5.5 0.0.0.0
 [AR5-ospf-1-area-0.0.0.1]net 35.1.1.0 0.0.0.255
+[AR5-ospf-1-area-0.0.0.1]net 45.1.1.0 0.0.0.255
 [AR5-ospf-1-area-0.0.0.1]area 2
 [AR5-ospf-1-area-0.0.0.2]net 56.1.1.0 0.0.0.255
 
