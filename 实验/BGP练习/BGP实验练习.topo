@@ -59,6 +59,6 @@
         <txttip left="210" top="529" right="264" bottom="548" content="AS 100" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
         <txttip left="201" top="108" right="260" bottom="128" content="AS 200" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
         <txttip left="530" top="533" right="584" bottom="552" content="AS 300" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
-        <txttip left="650" top="308" right="1145" bottom="412" content="实验需求：&#x0D;&#x0A;1. 配置相应的接口IP地址，除AR3外，其他路由器配置环回口地址&#x0D;&#x0A;2. 在AS 200区域内配置OSPF实现互通&#x0D;&#x0A;3. 在AR2和AR4之间配置IBGP&#x0D;&#x0A;4. 在AR1和AR2、AR4和AR5之间配置EBGP&#x0D;&#x0A;5. 使AR1环回口地址可以与AR5环回口地址互通" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="115" top="575" right="610" bottom="679" content="实验需求：&#x0D;&#x0A;1. 配置相应的接口IP地址，除AR3外，其他路由器配置环回口地址&#x0D;&#x0A;2. 在AS 200区域内配置OSPF实现互通&#x0D;&#x0A;3. 在AR2和AR4之间配置IBGP&#x0D;&#x0A;4. 在AR1和AR2、AR4和AR5之间配置EBGP&#x0D;&#x0A;5. 使AR1环回口地址可以与AR5环回口地址互通" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
     </txttips>
 </topo>

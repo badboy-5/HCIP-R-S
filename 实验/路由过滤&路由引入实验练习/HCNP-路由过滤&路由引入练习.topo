@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="3E5F8008-8E50-4861-9B0A-1226055E2480" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A4-30-EA" com_port="2000" bootmode="0" cx="133.000000" cy="133.000000" edit_left="160" edit_top="187">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="271CD448-2E63-4a56-A97B-B8D831D01EC0" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-01-51-9B" com_port="2001" bootmode="0" cx="133.000000" cy="453.000000" edit_left="160" edit_top="507">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="6F6FBC9C-4C25-4a11-B61C-6A928C2617A4" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-54-55-F7" com_port="2002" bootmode="0" cx="373.000000" cy="293.000000" edit_left="400" edit_top="347">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="6A3395DE-7070-4186-A4F9-EEC16DDAD4BA" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AD-17-DD" com_port="2003" bootmode="0" cx="693.000000" cy="293.000000" edit_left="720" edit_top="347">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="6F6FBC9C-4C25-4a11-B61C-6A928C2617A4" destDeviceID="6A3395DE-7070-4186-A4F9-EEC16DDAD4BA">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="443.183777" srcBoundRect_Y="320.000000" srcOffset_X="-15.000000" srcOffset_Y="-24.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="676.816223" tarBoundRect_Y="320.000000" tarOffset_X="-34.000000" tarOffset_Y="-25.000000" />
+        </line>
+        <line srcDeviceID="6F6FBC9C-4C25-4a11-B61C-6A928C2617A4" destDeviceID="3E5F8008-8E50-4861-9B0A-1226055E2480">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="364.068939" srcBoundRect_Y="296.045959" srcOffset_X="-45.000000" srcOffset_Y="8.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="195.931061" tarBoundRect_Y="183.954041" tarOffset_X="0.000000" tarOffset_Y="-13.000000" />
+        </line>
+        <line srcDeviceID="6F6FBC9C-4C25-4a11-B61C-6A928C2617A4" destDeviceID="271CD448-2E63-4a56-A97B-B8D831D01EC0">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="364.068939" srcBoundRect_Y="343.954041" srcOffset_X="-48.000000" srcOffset_Y="-13.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="195.931061" tarBoundRect_Y="456.045959" tarOffset_X="-2.000000" tarOffset_Y="7.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="0" color="16776960" upleftcorner="401,218" width="374" height="191" startpt="0,0" endpt="0,0" borderStyle="3" borderWidth="3" />
+        <shape type="1" filloption="0" color="16711808" upleftcorner="102,70" width="292" height="513" startpt="0,0" endpt="0,0" borderStyle="3" borderWidth="3" />
+        <shape type="2" filloption="1" color="16777088" upleftcorner="106,127" width="145" height="132" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="12615935" upleftcorner="106,408" width="128" height="116" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="150" top="212" right="204" bottom="234" content="分支A" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="139" top="422" right="193" bottom="444" content="分支B" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="324" top="80" right="378" bottom="102" content="RIPv2" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="440" top="223" right="553" bottom="245" content="OSPF Area 0" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="550" top="383" right="595" bottom="405" content="总部" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="517" top="330" right="621" bottom="349" content="10.1.34.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="575" top="254" right="762" bottom="290" content="Lo0:192.168.4.4/24 A流&#x0D;&#x0A;Lo1:172.16.4.4/24  B流" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="108" top="89" right="295" bottom="125" content="Lo0:192.168.1.1/24 A流&#x0D;&#x0A;Lo1:172.16.1.1/24  B流" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="107" top="529" right="302" bottom="565" content="Lo0:192.168.2.2/24 A流&#x0D;&#x0A;Lo1:172.16.2.2/24  B流" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="266" top="213" right="370" bottom="232" content="10.1.13.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="266" top="411" right="370" bottom="430" content="10.1.23.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="402" top="442" right="1005" bottom="546" content="1. 按照图示配置IP地址，总部和分支A、分支B各自使用loopback口模拟业务网段&#x0D;&#x0A;   公司业务流分为A流和B流，网段如图所示&#x0D;&#x0A;2. 总部内部配置OSPF互通，分支A、分支B配置RIP互通&#x0D;&#x0A;3. 在R3上配置OSPF和RIP双向引入，要求总部和分支之间只有A流互通&#x0D;&#x0A;4. 配置路由过滤，使分支A与分B只有B流可以互通&#x0D;&#x0A;5. OSPF区域不允许出现RIP协议报文" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+    </txttips>
+</topo>
