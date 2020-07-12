@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="AB819032-9D84-44e4-A030-A3E7DF2F0982" name="Site B-2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-FF-04-D6" com_port="2001" bootmode="0" cx="133.000000" cy="453.000000" edit_left="160" edit_top="507">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="5169ED22-C2DE-40c9-8CFD-7DCEB429CF23" name="PE2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-7A-20-4B" com_port="2006" bootmode="0" cx="773.000000" cy="293.000000" edit_left="800" edit_top="347">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="B239BF68-4CEF-4346-BF12-EBF13810472E" name="PE1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-D6-06-71" com_port="2004" bootmode="0" cx="293.000000" cy="293.000000" edit_left="320" edit_top="347">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="4C243C14-C6E1-4b4f-9106-36A17719F4FB" name="P" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-97-51-81" com_port="2005" bootmode="0" cx="533.000000" cy="293.000000" edit_left="560" edit_top="347">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="635BDFFF-CB1A-42a7-8B59-8385E0A8F176" name="Site B-4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-1B-0D-93" com_port="2003" bootmode="0" cx="933.000000" cy="453.000000" edit_left="960" edit_top="507">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="58DDF991-9E11-4b93-96BA-2DA92FE21FAD" name="Site A-3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-61-7F-34" com_port="2002" bootmode="0" cx="933.000000" cy="133.000000" edit_left="960" edit_top="187">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="7C2F5170-1108-40b3-AD38-725093909D25" name="Site A-1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A6-37-30" com_port="2000" bootmode="0" cx="133.000000" cy="133.000000" edit_left="151" edit_top="191">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="B239BF68-4CEF-4346-BF12-EBF13810472E" destDeviceID="4C243C14-C6E1-4b4f-9106-36A17719F4FB">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="363.183777" srcBoundRect_Y="320.000000" srcOffset_X="-14.000000" srcOffset_Y="-26.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="516.816223" tarBoundRect_Y="320.000000" tarOffset_X="-31.000000" tarOffset_Y="-23.000000" />
+        </line>
+        <line srcDeviceID="4C243C14-C6E1-4b4f-9106-36A17719F4FB" destDeviceID="5169ED22-C2DE-40c9-8CFD-7DCEB429CF23">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="603.183777" srcBoundRect_Y="320.000000" srcOffset_X="-16.000000" srcOffset_Y="-23.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="756.816223" tarBoundRect_Y="320.000000" tarOffset_X="-33.000000" tarOffset_Y="-23.000000" />
+        </line>
+        <line srcDeviceID="5169ED22-C2DE-40c9-8CFD-7DCEB429CF23" destDeviceID="58DDF991-9E11-4b93-96BA-2DA92FE21FAD">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="830.535522" srcBoundRect_Y="289.464478" srcOffset_X="2.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="929.464478" tarBoundRect_Y="190.535538" tarOffset_X="-51.000000" tarOffset_Y="-9.000000" />
+        </line>
+        <line srcDeviceID="5169ED22-C2DE-40c9-8CFD-7DCEB429CF23" destDeviceID="635BDFFF-CB1A-42a7-8B59-8385E0A8F176">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="830.535522" srcBoundRect_Y="350.535522" srcOffset_X="7.000000" srcOffset_Y="-10.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="929.464478" tarBoundRect_Y="449.464478" tarOffset_X="-47.000000" tarOffset_Y="5.000000" />
+        </line>
+        <line srcDeviceID="B239BF68-4CEF-4346-BF12-EBF13810472E" destDeviceID="7C2F5170-1108-40b3-AD38-725093909D25">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="289.464478" srcBoundRect_Y="289.464478" srcOffset_X="-55.000000" srcOffset_Y="3.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="190.535538" tarBoundRect_Y="190.535538" tarOffset_X="-3.000000" tarOffset_Y="-15.000000" />
+        </line>
+        <line srcDeviceID="B239BF68-4CEF-4346-BF12-EBF13810472E" destDeviceID="AB819032-9D84-44e4-A030-A3E7DF2F0982">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="289.464478" srcBoundRect_Y="350.535522" srcOffset_X="-58.000000" srcOffset_Y="-4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="190.535538" tarBoundRect_Y="449.464478" tarOffset_X="-2.000000" tarOffset_Y="12.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="8454143" upleftcorner="288,221" width="548" height="191" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="0" color="16744703" upleftcorner="56,412" width="208" height="153" startpt="0,0" endpt="0,0" borderStyle="2" borderWidth="3" />
+        <shape type="2" filloption="0" color="16744448" upleftcorner="59,90" width="208" height="153" startpt="0,0" endpt="0,0" borderStyle="2" borderWidth="3" />
+        <shape type="2" filloption="0" color="16744448" upleftcorner="856,88" width="208" height="153" startpt="0,0" endpt="0,0" borderStyle="2" borderWidth="3" />
+        <shape type="2" filloption="0" color="16744703" upleftcorner="857,409" width="208" height="153" startpt="0,0" endpt="0,0" borderStyle="2" borderWidth="3" />
+    </shapes>
+    <txttips>
+        <txttip left="251" top="164" right="433" bottom="247" content="VPN Instance A&#x0D;&#x0A;RD 100:100&#x0D;&#x0A;RT import 100:100&#x0D;&#x0A;   export 200:200" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="259" top="381" right="441" bottom="464" content="VPN Instance B&#x0D;&#x0A;RD 300:300&#x0D;&#x0A;RT import 300:300&#x0D;&#x0A;   export 400:400" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="689" top="169" right="871" bottom="252" content="VPN Instance A&#x0D;&#x0A;RD 100:100&#x0D;&#x0A;RT import 200:200&#x0D;&#x0A;   export 100:100" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="500" top="385" right="613" bottom="407" content="MPLS domain" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="682" top="364" right="864" bottom="447" content="VPN Instance B&#x0D;&#x0A;RD 300:300&#x0D;&#x0A;RT import 400:400&#x0D;&#x0A;   export 300:300" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="883" top="526" right="1045" bottom="545" content="Lo 0:192.168.2.2/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="81" top="111" right="243" bottom="130" content="Lo 0:192.168.1.1/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="290" top="259" right="419" bottom="278" content="Lo 0:1.1.1.1/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="494" top="264" right="623" bottom="283" content="Lo 0:3.3.3.3/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="698" top="268" right="827" bottom="287" content="Lo 0:2.2.2.2/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="393" top="478" right="730" bottom="617" content="步骤:&#x0D;&#x0A;1、配置IP地址&#x0D;&#x0A;2、部署MPLS区域IGP协议&#x0D;&#x0A;3、开启MPLS区域MPLS及MPLS LDP协议&#x0D;&#x0A;4、在PE设备部署VPN实例，并配置RD与RT属性&#x0D;&#x0A;5、在PE设备部署MP-BGP 协议&#x0D;&#x0A;6、部署PE-CE之间路由协议&#x0D;&#x0A;7、在PE设备上做单点双向路由引入" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="882" top="114" right="1044" bottom="133" content="Lo 0:192.168.1.2/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="78" top="523" right="240" bottom="542" content="Lo 0:192.168.2.1/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+    </txttips>
+</topo>

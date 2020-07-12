@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="1D1E3E6F-D7F6-44fe-9FB3-7C1009457A26" name="MCS1" poe="0" model="MCS" settings=" -simpc_ip 172.16.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 172.16.1.254  -simpc_mac 54-89-98-B2-52-5B  -simpc_mc_dstip 238.1.1.1  -simpc_mc_dstmac 01-00-5E-01-01-01 " system_mac="54-89-98-B2-52-5B" com_port="0" bootmode="0" cx="99.000000" cy="118.000000" edit_left="129" edit_top="173">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="7E34D101-E0C7-4512-A82A-D4021041AF17" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-20-58-EC" com_port="2000" bootmode="0" cx="259.000000" cy="118.000000" edit_left="286" edit_top="172">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="00FB0546-DD6E-471a-9CA5-C47042E33DF7" name="AR6" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-52-5A-56" com_port="2005" bootmode="0" cx="739.000000" cy="278.000000" edit_left="766" edit_top="332">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="D33E13A3-31AC-4e5b-92FF-F1D012C09C01" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-50-2A-EC" com_port="2002" bootmode="0" cx="499.000000" cy="278.000000" edit_left="549" edit_top="328">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+            </slot>
+            <slot isMainBoard="0" id="1" type="9" />
+        </dev>
+        <dev id="55BB1AC5-44F0-44bf-BBD6-A51AA6DA510B" name="PC3" poe="0" model="PC" settings=" -simpc_ip 192.168.2.2  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.2.254  -simpc_mac 54-89-98-7B-09-A5  -simpc_mc_dstip 238.1.1.1  -simpc_mc_dstmac 01-00-5E-01-01-01  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-7B-09-A5" com_port="0" bootmode="0" cx="1067.000000" cy="41.000000" edit_left="1094" edit_top="95">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="2CCBA097-8A08-4ea8-B10D-467300253F15" name="PC2" poe="0" model="PC" settings=" -simpc_ip 192.168.2.1  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.2.254  -simpc_mac 54-89-98-26-1C-44  -simpc_mc_dstip 238.1.1.1  -simpc_mc_dstmac 01-00-5E-01-01-01  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-26-1C-44" com_port="0" bootmode="0" cx="1067.000000" cy="361.000000" edit_left="1094" edit_top="415">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="A49832AF-572A-47af-B3B2-BA78E1D72AE3" name="AR5" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-27-65-C2" com_port="2004" bootmode="0" cx="739.000000" cy="118.000000" edit_left="766" edit_top="172">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="939074D2-A763-4106-A4DB-C909294DE0B6" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-D8-76-AE" com_port="2003" bootmode="0" cx="499.000000" cy="438.000000" edit_left="526" edit_top="492">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="380B8CA4-E44D-482a-96F1-21F60BDB6B2D" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.1.254  -simpc_mac 54-89-98-B5-2A-4E  -simpc_mc_dstip 238.1.1.1  -simpc_mc_dstmac 01-00-5E-01-01-01  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-B5-2A-4E" com_port="0" bootmode="0" cx="899.000000" cy="438.000000" edit_left="926" edit_top="492">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="56D7449B-5261-4fb8-B7BF-5E9CE0C99620" name="LSW1" poe="0" model="S3700" settings="" system_mac="4C-1F-CC-98-7C-5C" com_port="2008" bootmode="0" cx="907.000000" cy="201.000000" edit_left="934" edit_top="255">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="4B172D58-B113-4a50-A84F-9CFBEE374554" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-C6-1D-08" com_port="2001" bootmode="0" cx="499.000000" cy="118.000000" edit_left="547" edit_top="167">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="1D1E3E6F-D7F6-44fe-9FB3-7C1009457A26" destDeviceID="7E34D101-E0C7-4512-A82A-D4021041AF17">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="169.183762" srcBoundRect_Y="145.000000" srcOffset_X="-22.000000" srcOffset_Y="-20.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="242.816238" tarBoundRect_Y="145.000000" tarOffset_X="-31.000000" tarOffset_Y="13.000000" />
+        </line>
+        <line srcDeviceID="7E34D101-E0C7-4512-A82A-D4021041AF17" destDeviceID="4B172D58-B113-4a50-A84F-9CFBEE374554">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="329.183777" srcBoundRect_Y="145.000000" srcOffset_X="-11.000000" srcOffset_Y="-20.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="482.816223" tarBoundRect_Y="145.000000" tarOffset_X="-37.000000" tarOffset_Y="-21.000000" />
+        </line>
+        <line srcDeviceID="7E34D101-E0C7-4512-A82A-D4021041AF17" destDeviceID="D33E13A3-31AC-4e5b-92FF-F1D012C09C01">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="321.931061" srcBoundRect_Y="168.954041" srcOffset_X="0.000000" srcOffset_Y="-12.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="490.068939" tarBoundRect_Y="281.045959" tarOffset_X="-52.000000" tarOffset_Y="3.000000" />
+        </line>
+        <line srcDeviceID="4B172D58-B113-4a50-A84F-9CFBEE374554" destDeviceID="D33E13A3-31AC-4e5b-92FF-F1D012C09C01">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="526.000000" srcBoundRect_Y="188.183762" srcOffset_X="-28.000000" srcOffset_Y="10.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="526.000000" tarBoundRect_Y="261.816223" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="D33E13A3-31AC-4e5b-92FF-F1D012C09C01" destDeviceID="00FB0546-DD6E-471a-9CA5-C47042E33DF7">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="569.183777" srcBoundRect_Y="305.000000" srcOffset_X="-9.000000" srcOffset_Y="-22.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="722.816223" tarBoundRect_Y="305.000000" tarOffset_X="-36.000000" tarOffset_Y="-25.000000" />
+        </line>
+        <line srcDeviceID="55BB1AC5-44F0-44bf-BBD6-A51AA6DA510B" destDeviceID="56D7449B-5261-4fb8-B7BF-5E9CE0C99620">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="1063.464478" srcBoundRect_Y="98.535538" srcOffset_X="-74.000000" srcOffset_Y="-12.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="964.535522" tarBoundRect_Y="197.464462" tarOffset_X="7.000000" tarOffset_Y="-4.000000" />
+        </line>
+        <line srcDeviceID="2CCBA097-8A08-4ea8-B10D-467300253F15" destDeviceID="56D7449B-5261-4fb8-B7BF-5E9CE0C99620">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="1063.464478" srcBoundRect_Y="357.464478" srcOffset_X="2.000000" srcOffset_Y="-19.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="964.535522" tarBoundRect_Y="258.535522" tarOffset_X="9.000000" tarOffset_Y="-14.000000" />
+        </line>
+        <line srcDeviceID="D33E13A3-31AC-4e5b-92FF-F1D012C09C01" destDeviceID="939074D2-A763-4106-A4DB-C909294DE0B6">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="526.000000" srcBoundRect_Y="348.183777" srcOffset_X="8.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="526.000000" tarBoundRect_Y="421.816223" tarOffset_X="6.000000" tarOffset_Y="-1.000000" />
+        </line>
+        <line srcDeviceID="939074D2-A763-4106-A4DB-C909294DE0B6" destDeviceID="380B8CA4-E44D-482a-96F1-21F60BDB6B2D">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="569.183777" srcBoundRect_Y="465.000000" srcOffset_X="-9.000000" srcOffset_Y="8.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="882.816223" tarBoundRect_Y="465.000000" tarOffset_X="-50.000000" tarOffset_Y="-36.000000" />
+        </line>
+        <line srcDeviceID="4B172D58-B113-4a50-A84F-9CFBEE374554" destDeviceID="A49832AF-572A-47af-B3B2-BA78E1D72AE3">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="569.183777" srcBoundRect_Y="145.000000" srcOffset_X="-9.000000" srcOffset_Y="-22.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="722.816223" tarBoundRect_Y="145.000000" tarOffset_X="-29.000000" tarOffset_Y="-24.000000" />
+        </line>
+        <line srcDeviceID="A49832AF-572A-47af-B3B2-BA78E1D72AE3" destDeviceID="56D7449B-5261-4fb8-B7BF-5E9CE0C99620">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="804.716492" srcBoundRect_Y="164.127777" srcOffset_X="-7.000000" srcOffset_Y="-19.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="895.283508" tarBoundRect_Y="208.872223" tarOffset_X="-75.000000" tarOffset_Y="-2.000000" />
+        </line>
+        <line srcDeviceID="00FB0546-DD6E-471a-9CA5-C47042E33DF7" destDeviceID="56D7449B-5261-4fb8-B7BF-5E9CE0C99620">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="805.256836" srcBoundRect_Y="287.007294" srcOffset_X="-6.000000" srcOffset_Y="7.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="894.743164" tarBoundRect_Y="245.992722" tarOffset_X="-74.000000" tarOffset_Y="-13.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="16777088" upleftcorner="254,65" width="576" height="448" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="512" top="95" right="537" bottom="117" content="RP" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-65536" charset="1" />
+        <txttip left="225" top="553" right="911" bottom="640" content="实验需求：&#x0D;&#x0A;1. 如图所示，要求在网络中部署PIM-SM协议且以静态方式指定R2为RP。&#x0D;&#x0A;2. 用户侧网络配置IGMPv2协议，同时需要尽可能地降低用户侧网络资源消耗，提高安全性。&#x0D;&#x0A;3. R5和R6连接接收者，要求在RTE和RP之间建立RPT。&#x0D;&#x0A;4. R4连接重要的用户网络，当用户加入组播组238.1.1.1组后，需要马上就能收到组播数据" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+    </txttips>
+</topo>

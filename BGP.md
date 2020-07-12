@@ -232,3 +232,4 @@ summary automatic  //自动聚合，按主类聚合，掩码为8
 **手动聚合**
 
 [【聚合实验及详细说明】](https://blog.csdn.net/qq_45668124/article/details/106627326)
+
